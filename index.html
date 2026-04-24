@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #f0f0f0; }
+
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 60px; background: #111; position: sticky; top: 0;
+    }
+    nav .logo { font-size: 1.4rem; font-weight: bold; color: #7c3aed; }
+    nav a { color: #ccc; text-decoration: none; margin-left: 24px; font-size: 0.95rem; }
+    nav a:hover { color: #7c3aed; }
+
+    .hero {
+      text-align: center; padding: 100px 20px 60px;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 16px; }
+    .hero h1 span { color: #7c3aed; }
+    .hero p { font-size: 1.2rem; color: #aaa; max-width: 500px; margin: 0 auto 32px; }
+    .hero a {
+      background: #7c3aed; color: white; padding: 12px 28px;
+      border-radius: 8px; text-decoration: none; font-weight: bold;
+    }
+    .hero a:hover { background: #6d28d9; }
+
+    section { padding: 60px 60px; }
+    h2 { font-size: 1.8rem; margin-bottom: 32px; border-left: 4px solid #7c3aed; padding-left: 12px; }
+
+    .skills-grid {
+      display: flex; flex-wrap: wrap; gap: 12px;
+    }
+    .skill {
+      background: #1e1e1e; border: 1px solid #333;
+      padding: 10px 20px; border-radius: 999px; font-size: 0.9rem;
+    }
+
+    .projects-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;
+    }
+    .card {
+      background: #1a1a1a; border: 1px solid #2a2a2a;
+      border-radius: 12px; padding: 24px;
+    }
+    .card h3 { margin-bottom: 8px; color: #c4b5fd; }
+    .card p { color: #999; font-size: 0.9rem; line-height: 1.6; }
+
+    #contact p { color: #aaa; margin-bottom: 8px; }
+    #contact a { color: #7c3aed; }
+
+    footer {
+      text-align: center; padding: 24px; color: #555; border-top: 1px solid #222; font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">YourName</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Hi, I'm <span>Your Name</span> 👋</h1>
+    <p>A passionate developer building things for the web.</p>
+    <a href="#projects">View My Work</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="color:#aaa; max-width:600px; line-height:1.8;">
+      I'm a developer who loves creating clean, functional web experiences.
+      Write a few sentences about yourself, your background, and what drives you.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">GitHub</span>
+      <!-- Add more skills here -->
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Describe what this project does and what technologies you used to build it.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Describe what this project does and what technologies you used to build it.</p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Describe what this project does and what technologies you used to build it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:you@email.com">you@email.com</a></p>
+    <p>💼 LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+    <p>🐙 GitHub: <a href="#">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name. Built with HTML & CSS.</p>
+  </footer>
+
+</body>
+</html>
